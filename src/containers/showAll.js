@@ -2,6 +2,7 @@ import _ from 'lodash'
 import React, { Component } from 'react';
 import { connect } from 'react-redux'
 import { fetchUsers } from '../actions/index'
+import ShowAlbums from './showAlbums'
 
 class ShowAll extends Component {
   componentDidMount() {
@@ -20,11 +21,16 @@ class ShowAll extends Component {
   render() {
     console.log(this.props.users)
     return (
-      <div className="col-sm-4 show-all-users">
-        <h3>Users</h3>
-        <ul>
-          {this.renderUsers()}
-        </ul>
+      <div>
+        <div className="col-sm-4 show-all-users">
+          <h3>Users</h3>
+          <ul>
+            {this.renderUsers()}
+          </ul>
+        </div>
+        <div className="col-sm-8">
+          <ShowAlbums />
+        </div>
       </div>
     );
   }
