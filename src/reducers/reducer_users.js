@@ -1,5 +1,5 @@
 import _ from 'lodash'
-import { FETCH_USERS } from '../actions/index'
+import { FETCH_USERS, FETCH_ALBUMS } from '../actions/index'
 
 export default function(state = {}, action) {
   switch (action.type) {
