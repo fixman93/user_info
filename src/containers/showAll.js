@@ -28,7 +28,7 @@ class ShowAll extends Component {
             {this.renderUsers()}
           </ul>
         </div>
-        <div className="col-sm-8">
+        <div className="col-sm-8 showAlbums">
           <ShowAlbums />
         </div>
       </div>
